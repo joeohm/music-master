@@ -1,7 +1,7 @@
 # Music master
 
-A React project for browsing artists from Spotify. I did this project to learn React class components, and how to integrate with Spotify API.
-The search result allows you to play a preview of each song, if a preview exists.
+A React project for browsing artists from Spotify. I did this project to learn React class components, and how to integrate with Spotify API.  
+The search result allows you to play a preview of each song, if a preview exists in the Spotify API.
 
 ### Deployed here
 
