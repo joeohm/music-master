@@ -1,11 +1,15 @@
-import React, { Component } from "react";
-import { fetchArtist, fetchTopTrack } from "../util/helpers";
-import Search from "./Search";
-import Artist from "./Artist";
-import Tracks from "./Tracks";
+import React, { Component } from 'react';
+import { fetchArtist, fetchTopTrack } from '../util/helpers';
+import Search from './Search';
+import Artist from './Artist';
+import Tracks from './Tracks';
 
 class App extends Component {
   state = { artist: null, tracks: [] };
+
+  componentDidMount() {
+    fetch(`${process.env.REACT_APP_API}/`);
+  }
 
   searchArtist = (artistQuery) => {
     // 1. Call the artist fetcher and update state with artist info
@@ -31,7 +35,7 @@ class App extends Component {
       .catch((error) => alert(error.message));
 
     // 3. Empty the search field value
-    document.querySelector(".artist-search").value = "";
+    document.querySelector('.artist-search').value = '';
   };
 
   render() {
