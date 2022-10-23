@@ -1,3 +1,7 @@
+# Music master
+
+A React project for browsing artists from Spotify. I did this project to learn React class components, and how to integrate with Spotify API.
+
 ### Deployed here
 
 https://joels-music-master.netlify.app/
